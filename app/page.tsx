@@ -52,7 +52,7 @@ export default function Home() {
         }}
       ></div>
       {/* Gradient Background */}
-      <div className="fixed top-0 left-0 w-full h-full bg-linear-135 from-[rgba(31,33,141,0.5)] to-[rgba(17,5,23,0.2)] -z-10"></div>
+      <div className="fixed top-0 left-0 w-full h-full bg-linear-135 from-[rgba(31,33,141,0.5)] to-[rgba(18,10,59,0.2)] -z-10"></div>
 
       {/* Nav */}
       <Navbar homeRef={homeRef} aboutRef={aboutRef} projectRef={projectRef} contactRef={contactRef} />

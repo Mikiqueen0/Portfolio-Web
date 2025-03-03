@@ -26,7 +26,7 @@ export default function ProjectPopup({ isPopupOpen, setIsPopupOpen, project }: P
   }, [])
 
   return (
-    <div className={`fixed top-0 left-0 w-full h-full py-10 backdrop-blur-md bg-black/20 z-60 flex justify-center overflow-y-scroll ${isPopupOpen ? "translate-y-0" : "translate-y-full"}`}>
+    <div className={`fixed top-0 left-0 w-full h-[100vh] py-10 backdrop-blur-md bg-black/20 z-60 flex justify-center overflow-y-scroll ${isPopupOpen ? "translate-y-0" : "translate-y-full"}`}>
       <button onClick={() => {setIsPopupOpen(false)}} className="absolute w-fit h-fit justify-items-end top-2 right-3">
         <svg className="size-8" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24">
           <path fill="currentColor" d="m12 13.4l-4.9 4.9q-.275.275-.7.275t-.7-.275t-.275-.7t.275-.7l4.9-4.9l-4.9-4.9q-.275-.275-.275-.7t.275-.7t.7-.275t.7.275l4.9 4.9l4.9-4.9q.275-.275.7-.275t.7.275t.275.7t-.275.7L13.4 12l4.9 4.9q.275.275.275.7t-.275.7t-.7.275t-.7-.275z"></path>
@@ -34,7 +34,7 @@ export default function ProjectPopup({ isPopupOpen, setIsPopupOpen, project }: P
       </button>
       <div
         ref={cardRef}
-        className={`relative max-md:w-[90vw] h-fit md:w-[45rem] rounded-2xl flex bg-linear-180 from-[#28285c] to-[#15153b] transition-all duration-300 ${
+        className={`relative max-md:w-[90vw] h-fit md:w-[45rem] rounded-2xl flex bg-[#1e1e46] transition-all duration-300 ${
           isPopupOpen
             ? "translate-y-0 animate-bounceUp"
             : "translate-y-full"
@@ -84,11 +84,11 @@ export default function ProjectPopup({ isPopupOpen, setIsPopupOpen, project }: P
               </div>
             </div>
             <div className="flex flex-col gap-4">
-              <p className="h-full text-slate-200 text-lg xl:text-lg font-light leading-7">
+              <p className="h-full text-slate-200 text-base xl:text-lg font-light leading-7">
                 {project.shortDes}
               </p>
               {project.longDes.map((text, index) => (
-                <p key={index} className="h-full text-slate-200 text-lg xl:text-lg font-light leading-7">
+                <p key={index} className="h-full text-slate-200 text-base xl:text-lg font-light leading-7">
                   {text}
                 </p>
               ))}
