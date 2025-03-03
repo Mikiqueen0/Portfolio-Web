@@ -10,12 +10,12 @@ interface ToolDisplayProps {
 }
 
 function useIsVisible(ref: React.RefObject<HTMLElement | null>, setActiveSection: React.Dispatch<React.SetStateAction<string>>) {
-  const [threshold, setThreshold] = useState(0.5);
+  const [threshold, setThreshold] = useState(0.2);
 
   useEffect(() => {
-    const mediaQuery = window.matchMedia('(max-width: 900px)');
+    const mediaQuery = window.matchMedia('(max-width: 375px)');
     const updateThreshold = () => {
-      setThreshold(mediaQuery.matches ? 0.3 : 0.5);
+      setThreshold(mediaQuery.matches ? 0.1 : 0.2);
     };
 
     updateThreshold();
@@ -29,7 +29,9 @@ function useIsVisible(ref: React.RefObject<HTMLElement | null>, setActiveSection
   useEffect(() => {
     if (!ref.current) return;
     const observer = new IntersectionObserver(([entry]) => {
+      
       if (entry.isIntersecting) {
+        console.log(ref.current?.id);
         setActiveSection(ref.current?.id || "");
       }
     }, {
