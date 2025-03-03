@@ -23,13 +23,13 @@
 
   @keyframes bounceUp {
     0% {
-      transform: translateY(100%);
+      transform: scaleY(0);
     }
-    50% {
-      transform: translateY(-2%);
+    70% {
+      transform: scaleY(1.015);
     }
     100% {
-      transform: translateY(0);
+      transform: scaleY(1);
     }
   }
 }
@@ -43,7 +43,7 @@
   }
 
   .animate-bounceUp {
-    animation: bounceUp 0.6s ease-out;
+    animation: bounceUp 0.4s ease-out;
   }
 }
 
