@@ -12,8 +12,13 @@ interface ProjectPopupProps {
 
 export default function ProjectPopup({ isPopupOpen, setIsPopupOpen, project }: ProjectPopupProps) {
   const cardRef = useRef<HTMLDivElement | null>(null);
+  const topDiv = useRef<HTMLDivElement | null>(null);
   
   useEffect(() => {
+    if (topDiv.current) {
+      topDiv.current.scrollTop = 0;
+    }
+
     const handleClickOutside = (e: MouseEvent) => {
       if (cardRef.current && !cardRef.current.contains(e.target as Node)) {
         setIsPopupOpen(false);
@@ -24,9 +29,10 @@ export default function ProjectPopup({ isPopupOpen, setIsPopupOpen, project }: P
       document.removeEventListener("mousedown", handleClickOutside);
     };
   }, [])
+  
 
   return (
-    <div className={`fixed top-0 left-0 w-full h-full backdrop-blur-md bg-black/20 z-60 flex justify-center ${isPopupOpen ? "translate-y-0" : "translate-y-full"}`}>
+    <div ref={topDiv} className={`fixed top-0 left-0 w-full h-full backdrop-blur-md bg-black/20 z-60 flex justify-center ${isPopupOpen ? "translate-y-0" : "translate-y-full"}`}>
       <div className="relative w-full h-full flex items-start justify-center py-10 overflow-y-scroll">
         <button onClick={() => {setIsPopupOpen(false)}} className="absolute w-fit h-fit justify-items-end top-2 right-3">
           <svg className="size-8" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24">
