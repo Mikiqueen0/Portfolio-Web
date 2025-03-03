@@ -58,7 +58,7 @@ export default function Home() {
       <Navbar homeRef={homeRef} aboutRef={aboutRef} projectRef={projectRef} contactRef={contactRef} />
       
       {/* Body */}
-      <div className="w-full h-full flex flex-col overflow-y-hidden pb-8">
+      <div className="w-full h-full flex flex-col pb-8">
         {/* Home */}
         <div ref={homeRef} id="home" className="min-h-[100vh] w-full pt-[4.5rem] px-[6rem] max-md:px-[14vw] max-sm:px-[8vw] max-xs:px-[1.5rem] flex flex-col justify-center gap-5 max-sm:gap-4">
           <TextReveal duration={500}>
