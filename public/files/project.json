@@ -5,7 +5,7 @@
     "subject": "Web Programming I Project",
     "shortDes": "A web application that connects those looking to find homes for stray cats with potential adopters. Users can post details about cats in need of adoption, and interested adopters can reach out directly to express their interest.",
     "tools": ["React", "Javascript", "Tailwind CSS", "MySQL", "Firebase", "Figma"],
-    "image": "images/blank.png",
+    "image": "images/BitCat.png",
     "githubLink": "https://github.com/HelloArtty/BitCatData",
     "longDes": ["Developed using the MERN stack, with Tailwind CSS for the frontend, Firebase for image storage, and MySQL as the database."],
     "roles": ["Backend Developer"]
@@ -27,7 +27,7 @@
     "subject": "Capstone Project",
     "shortDes": "A web application social media platform for MBTI enthusiasts to connect with others who have similar interests. It features an LSVM-based classification system that analyzes English text from social media posts to identify users MBTI personality types.",
     "tools": ["React", "Javascript", "Tailwind CSS", "Node.js", "Python", "Flask", "MongoDB", "Figma"],
-    "image": "images/blank.png",
+    "image": "images/Capstone.png",
     "githubLink": "https://github.com/Endo-Sym/We-are",
     "longDes": ["I'm responsible for developing machine learning model including preprocess text data and training LSVM model"],
     "roles": ["Frontend Developer", "Machine Learning Developer"]
@@ -38,7 +38,7 @@
     "subject": "Edge Computing and Internet of Things Project",
     "shortDes": "A pedestrian crossing safety system with a barrier and camera setup that detects vehicles ignoring the barrier, captures images, identifies license plates using machine learning, and displays the data on a web interface.",
     "tools": ["C++", "Arduino IDE", "JavaScript", "React", "Tailwind CSS", "Firebase", "Cloud Run", "Docker", "Python", "FastAPI"],
-    "image": "images/blank.png",
+    "image": "images/Zebra.png",
     "githubLink": "https://github.com/Mikiqueen0/IOT-Zebra-Web",
     "longDes": ["Car license plate images are captured by an IoT device running software written in C++, processed using YOLOv11 for license plate detection, followed by using Thai OCR to extract text from the image, and display the results on a website using React, which is deployed on Firebase."],
     "roles": ["Software Developer", "Full Stack Developer", "Machine learning Developer"]
@@ -49,7 +49,7 @@
     "subject": "Object-Oriented Programming Project",
     "shortDes": "Post Meow is an adventure game where players take on the roles of a cat courier traveling across Japan. Complete delivery missions, explore famous landmarks, interact with NPCs, and learn about Japanese culture through engaging gameplay.",
     "tools": ["C#", "Unity", "Aseprite"],
-    "image": "images/Post-meow-Scene-1.png",
+    "image": "images/PostMeow.png",
     "githubLink": "https://github.com/HelloArtty/CatOOP01",
     "longDes": ["The game is designed with 2D graphics created using Aseprite and developed using Unity with C#.", "This project is aimed at demonstrating basic OOP concepts, focusing on Encapsulation, Abstraction, Inheritance, and Polymorphism."],
     "roles": ["Art Design", "Game Developer"]
